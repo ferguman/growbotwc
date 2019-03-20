@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+// import Home from './views/Home.vue'
+import PhenoForm from './views/PhenoForm.vue'
 
 Vue.use(Router)
 
@@ -8,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'pheno_form',
+      component: PhenoForm
+    },
+    {
+      path: '/pheno_form',
+      name: 'pheno_form',
+      component: PhenoForm
     },
     {
       path: '/about',
