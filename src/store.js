@@ -6,16 +6,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    grow_site: { id: 1, name: 'greencubator' },
-    grow_sites: [
-      { id: 1, name: 'greencubator' },
-      { id: 2, name: 'maplewood' },
-      { id: 3, name: 'home' }],
+    fc: { id: 1, name: 'fc3' },
+    fcs: [
+      { id: 1, name: 'fc3' },
+      { id: 2, name: 'fc1' },
+      { id: 3, name: 'doser' }],
     show_login_button: true
   },
   mutations: {
-    update_grow_site (state, grow_site) {
-      state.grow_site = grow_site
+    update_fc (state, fc) {
+      state.fc = fc
     },
     show_login_button (state) {
       state.show_login_button = true
@@ -25,6 +25,8 @@ export default new Vuex.Store({
     }
   },
   actions: {
-
+    login (context) {
+      console.log('logging in')
+    }
   }
 })

@@ -9,7 +9,7 @@
         <span>Grow Bot</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-select v-model="grow_site" :items="grow_sites"
+      <v-select v-model="fc" :items="fcs"
                 item-text="name" item-value="id"> </v-select>
       <v-btn flat v-if="show_logout_button" to="logout">
         <span class="mr-2">Logout</span>
@@ -49,15 +49,15 @@ export default {
   computed: {
     show_login_button () { return this.$store.state.show_login_button },
     show_logout_button () { return !this.$store.state.show_login_button },
-    grow_site: {
+    fc: {
       get () {
-        return this.$store.state.grow_site
+        return this.$store.state.fc
       },
       set (value) {
-        this.$store.commit('update_grow_site', value)
+        this.$store.commit('update_fc', value)
       }
     },
-    grow_sites () { return this.$store.state.grow_sites }
+    fcs () { return this.$store.state.fcs }
   },
   methods: {
     update_grow_site (e) {
