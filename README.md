@@ -1,5 +1,8 @@
 # growbotwc
 
+## Introduction
+A web based client for interacting with one or more grow bots.  Allows one to manage grows from planting to harvesting, enter and track data, and analyze historical results.
+
 ## Project setup
 ```
 npm install
